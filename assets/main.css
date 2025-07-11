@@ -1,0 +1,49 @@
+/* App-wide styling */
+body {
+    background-color: #0f1116;
+    color: #ffffff;
+    font-family: Iosevka NFM;
+    font-size: 20px; 
+    margin: 20px;
+}
+
+#rey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+#Ec_prince {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#Ec_prince h1{	
+	font-family: Pixel Operator Mono;
+	
+}
+#Icono {
+   	border-radius: 50%; 
+	margin: 0.25em;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #a8a8a8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+#Texto {
+	color: #666699;
+}
+
+#Texto a{
+
+}
