@@ -12,6 +12,6 @@ usa el siguiente comando:
 disfruta xD
 
 # SHOWCASE
-(si es que te interesa.)[https://odysee.com/@realec20xx:a/showcase:ec0]
+[si es que te interesa.](https://odysee.com/@realec20xx:a/showcase:ec0)
 
 
