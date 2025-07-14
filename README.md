@@ -14,4 +14,7 @@ disfruta xD
 # SHOWCASE
 [si es que te interesa.](https://odysee.com/@realec20xx:a/showcase:ec0)
 
+#HOSTEO
+logre hosterla en un servicio de hosteo de servers para juegos: http://147.185.221.30:14851/ (NO ESTARA FUNCIONANDO TODO EL DIA).
+
 
