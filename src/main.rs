@@ -15,6 +15,7 @@ fn App() -> Element {
         Indice{}
         Seccion_linux_general{} 
         Seccion_util{}  
+        Seccion_musica{}
     }
 }
 /*
@@ -44,10 +45,10 @@ pub fn Indice() -> Element {
         
         br {}         
         div { id: "indice",
-            h1 {"ìndice"},
-            a {href:"Presentacion", p{"Presentacion"}} 
-            a {href:"Seccion_util", p{"Secciòn util"}} 
-            
+            h1 {"ìndice"}
+            a {href:"#linux", p{"Secciòn linux general"}} 
+            a {href:"#Seccion_util", p{"Secciòn util"}} 
+            a {href:"#musica",       p{"Musica"}} 
         }
         br {}         
         br {}         
@@ -59,7 +60,7 @@ pub fn Indice() -> Element {
 #[component]
 pub fn Seccion_linux_general() -> Element {
     rsx! {
-        br {id: "Presentacion"}         
+        br {id: "linux"}         
         hr { id: "lineas_separar"} 
         div { id: "Texto",  
 
@@ -101,30 +102,64 @@ pub fn Seccion_util() -> Element {
     }
 }
 
-/*
 
 #[component]
-pub fn Seccion_util() -> Element {
+pub fn Seccion_musica() -> Element {
+    let mut count = String::from("");
+
+
     rsx! {
-        br {}         
+        br {id:"musica"}         
         hr { id: "lineas_separar"} 
+
         div { id: "Texto",  
 
-            h1 {"Seccion util"}
-            a {href: "https://www.susanrigetti.com/philosophy", 
-                h1 {  "Como aprender filosofia (Susan Rigetti)" }
+            h1 {"DISCLAIMER: quisiera que no utilizen plataformas de streaming(pagadas o no), de musica. Todas esas aplicaciones son de control mental."}
+            h2 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
+            h2 {"le da valor agregado."} 
+            br {}         
+                 
+            a { id: "yamete",href: "https://y2mate.as/en-NO0b/", 
+                h1 {  "PAGINA PARA DESCARGAR YOUTUBE." }
             } 
-            p {  "Filosofia."} 
-            a {href: "https://www.susanrigetti.com/physics", 
-                h1 {  "Como aprender fisica (Susan Rigetti)" }
+            a {href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
+                h1 {  "save file 2" }
+                
             } 
-            p {  "Fisica."} 
+            
+            a {href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM", 
+                h1 {  "Alaska - The Vortex / Invisible" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=a_6quQ994JI", 
+                h1 {  "Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)" }
+            } 
+            
+            a {href: "https://www.youtube.com/watch?v=ODysC7SM_Yk", 
+                h1 {  "相対性理論 - 気になるあの娘" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=XOgFYjwEopo", 
+                h1 {  "rosenbridge" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3", 
+                h1 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9", 
+                h1 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=gpyuAT9q06c", 
+                h1 {  "rocket coaster" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=wHNSSbGDrfo", 
+                h1 {  "Owain Panchiko (DEATHMETAL Remix)" }
+            } 
+            a {href: "https://www.youtube.com/watch?v=DuWQk4eA3lU", 
+                h1 {  "'Linebreak' (Amiga .mod!)" }
+            } 
         }
         
     }
 }
 
 
-*/
 
 
