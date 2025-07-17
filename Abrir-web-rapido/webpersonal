@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+
+./LibreWolf.x86_64.AppImage http://127.0.0.1:8080
