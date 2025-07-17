@@ -71,7 +71,21 @@ a:hover {
     align-items: center;
 }
 
-#Icono {
-   	
+
+#yamete {
+	
+
+  color: green;
 }
 
+ #yamete:visited {
+  color: #ffc161;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ #yamete:hover {
+  color: #ffe245;
+  background-color: transparent;
+  text-decoration: none;
+}

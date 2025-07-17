@@ -3,6 +3,10 @@ use dioxus::prelude::*;
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 const IMAGEN_1_PNG: Asset = asset!("/assets/3.png");
 const IMAGENES_HTML: Asset = asset!("/assets/index.html");
+const MARCUS: Asset = asset!("/assets/Marcus-Aurelius-Meditations.pdf");
+const LIBRO1: Asset = asset!("/assets/25 Roberto Bolaño - Los detectives salvajes.pdf");
+const LIBRO2: Asset = asset!("/assets/Indigno-de-ser-humano.pdf");
+
 
 fn main() {
     dioxus::launch(App);
@@ -13,6 +17,8 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         Presentacion{} 
         Indice{}
+        Seccion_estudio_rust{}
+        Seccion_libros{}
         Seccion_linux_general{} 
         Seccion_util{}  
         Seccion_musica{}
@@ -34,6 +40,9 @@ pub fn Presentacion() -> Element {
             
             img { src: "https://avatars.githubusercontent.com/u/136939439?v=4"}, 
             h1 {"E.C-WEB es mi web personal :v, dejare esto como repositorio."}
+            h1 {"Lo estare usando para trackear donde voy en mis estudios de:"}
+            h2 {"Rust"}
+            h2 {"Filosofia"}
         }
     }
 }
@@ -46,7 +55,10 @@ pub fn Indice() -> Element {
         br {}         
         div { id: "indice",
             h1 {"ìndice"}
-            a {href:"#linux", p{"Secciòn linux general"}} 
+        
+            a {href:"#estudios",       p{"Estudios Generales"}} 
+            a {href:"#libros",       p{"Libros que recomiendo"}} 
+            a {href:"#linux",       p{"Secciòn linux general"}} 
             a {href:"#Seccion_util", p{"Secciòn util"}} 
             a {href:"#musica",       p{"Musica"}} 
         }
@@ -56,6 +68,54 @@ pub fn Indice() -> Element {
 }
 
 
+#[component]
+pub fn Seccion_estudio_rust() -> Element {
+    rsx! {
+        br {id: "estudios"}         
+        hr { id: "lineas_separar"} 
+        div { id: "Texto",  
+
+            h1 {"Seccion Estudios Generales"}
+            a {href: "https://doc.rust-lang.org/book/ch07-02-defining-modules-to-control-scope-and-privacy.html", 
+                h2 {  "Rust." }
+            } 
+            p {"Estoy en la parte de modulos de Rust, no me gusta mucho XD."} 
+             
+            
+            a {href: MARCUS , 
+                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 25)." }
+            } 
+            p {"Me encanta pero me pierdo en el ingles antiguo xD, voy a intentar hacer lo que dice " a {href:"https://www.susanrigetti.com/philosophy", p{"en la seccion 'How to study'."}}} 
+             
+                 
+        }
+    }
+}
+
+
+#[component]
+pub fn Seccion_libros() -> Element {
+    rsx! {
+        br {id: "libros"}         
+        hr { id: "lineas_separar"} 
+        div { id: "Texto",  
+
+            h1 {"Seccion Libros que recomiendo"}
+            a {href: LIBRO1, 
+                h2 {  "Roberto Bolaño - Los detectives salvajes" }
+            } 
+             
+            a {href: MARCUS , 
+                h2 {  "Marcus Aurelius - Meditations." }
+            } 
+             
+                 
+            a {href: LIBRO2, 
+                h2 {  "Osamu Dazai - Indigno de ser humano" }
+            } 
+        }
+    }
+}
 
 #[component]
 pub fn Seccion_linux_general() -> Element {
