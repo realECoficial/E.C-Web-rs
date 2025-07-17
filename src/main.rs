@@ -3,10 +3,14 @@ use dioxus::prelude::*;
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 const IMAGEN_1_PNG: Asset = asset!("/assets/3.png");
 const IMAGENES_HTML: Asset = asset!("/assets/index.html");
-const MARCUS: Asset = asset!("/assets/Marcus-Aurelius-Meditations.pdf");
-const LIBRO1: Asset = asset!("/assets/25 Roberto Bolaño - Los detectives salvajes.pdf");
-const LIBRO2: Asset = asset!("/assets/Indigno-de-ser-humano.pdf");
-
+//libros
+const MARCUS: Asset = asset!("/assets/libros/Marcus-Aurelius-Meditations.pdf");
+const LIBRO1: Asset = asset!("/assets/libros/25 Roberto Bolaño - Los detectives salvajes.pdf");
+const LIBRO2: Asset = asset!("/assets/libros/Indigno-de-ser-humano.pdf");
+//musica
+const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
+const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
+const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
 
 fn main() {
     dioxus::launch(App);
@@ -177,11 +181,30 @@ pub fn Seccion_musica() -> Element {
             h1 {"DISCLAIMER: quisiera que no utilizen plataformas de streaming(pagadas o no), de musica. Todas esas aplicaciones son de control mental."}
             h2 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
             h2 {"le da valor agregado."} 
+            h2 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
             br {}         
-                 
+                
+            
+            
+            a {href: MUSIC1, 
+                h1 {  "Ocean_girl - perfect world." }
+            } 
+            
+            a {href: MUSIC2, 
+                h1 {  "65 save" }
+            } 
+            
+            a {href: MUSIC3, 
+                h1 {  "Trugictra - Tasty" }
+            } 
+            br {}         
+            h1 {"Esto para abajo es de youtube, TODO meter toda la musica xd."} 
+            
+
             a { id: "yamete",href: "https://y2mate.as/en-NO0b/", 
                 h1 {  "PAGINA PARA DESCARGAR YOUTUBE." }
             } 
+            
             a {href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
                 h1 {  "save file 2" }
                 
