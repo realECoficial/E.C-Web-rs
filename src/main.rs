@@ -11,6 +11,12 @@ const LIBRO2: Asset = asset!("/assets/libros/Indigno-de-ser-humano.pdf");
 const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
 const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
 const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
+const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
+const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
+const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
+const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
+const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
+
 
 fn main() {
     dioxus::launch(App);
@@ -184,7 +190,16 @@ pub fn Seccion_musica() -> Element {
             h2 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
             br {}         
                 
-            
+/* IGNORAR, es para no ir para arriba xd            
+const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
+const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
+const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
+const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
+const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
+const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
+const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
+const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
+*/
             
             a {href: MUSIC1, 
                 h1 {  "Ocean_girl - perfect world." }
@@ -195,7 +210,25 @@ pub fn Seccion_musica() -> Element {
             } 
             
             a {href: MUSIC3, 
-                h1 {  "Trugictra - Tasty" }
+                h1 {  "Trugictra - Tasty (Fastracker)" }
+            } 
+
+            a {href: MUSIC4, 
+                h1 {  "Substance - Them Phibez" }
+            } 
+            
+            a {href: MUSIC5, 
+                h1 {  "40k! - NoRedeemingQualities" }
+            } 
+            a {href: MUSIC6, 
+                h1 {  "Harito - YOU" }
+            } 
+
+            a {href: MUSIC7, 
+                h1 {  "Madwreck - Ride (Fastracker)" }
+            } 
+            a {href: MUSIC8, 
+                h1 {  "海神 - Watazumi" }
             } 
             br {}         
             h1 {"Esto para abajo es de youtube, TODO meter toda la musica xd."} 
