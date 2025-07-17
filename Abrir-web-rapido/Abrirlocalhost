@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 
 cd ~/programas-ociosos/E.C-web && dx serve --platform web
