@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "DISCLAIMER: Esto se instalara en /usr/local/bin/ porsi quieres revertir esto."
 sudo cp Abrirlocalhost Ec-web LibreWolf.x86_64.AppImage webpersonal /usr/local/bin/
 

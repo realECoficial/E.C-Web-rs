@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo rm -f /usr/local/bin/Abrirlocalhost  /usr/local/bin/Ec-web  /usr/local/bin/LibreWolf.x86_64.AppImage  /usr/local/bin/webpersonal 
+
+
