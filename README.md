@@ -17,4 +17,9 @@ disfruta xD
 # HOSTEO
 logre hosterla en un servicio de hosteo de servers para juegos: http://147.185.221.30:14851/ (NO ESTARA FUNCIONANDO TODO EL DIA).
 
+# SET UP PARA ABRIRLO COMO VARIABLE GLOBAL:
+
+[Aca esta todo lo que necesitar](https://github.com/realECoficial/E.C-Web-rs/tree/main/Abrir-web-rapido)
+(todo esto asumiendo que estas en arch86_64 con bash).
+
 
