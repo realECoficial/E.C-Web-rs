@@ -1,0 +1,24 @@
+fn merge_arrays(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
+    
+    let mut arr = vec![arr1, arr2].concat();
+    let mut swapped = true;
+    let biggest_num = 0;
+    while swapped {
+        swapped = false;
+        for i in 0..arr.len()-1 {
+            if arr[i] > arr[i + 1] {
+                biggest_num = arr[i]; 
+                swapped = true;
+            } 
+            
+        }
+    
+    }
+    let mut res = vec![0;biggest_num.try_into().unwrap()]; 
+    let mut new_num = 0; 
+    for i in 0..biggest_num {
+        new_num += 1; 
+        res[i] = new_num;
+    } 
+    return res;
+}

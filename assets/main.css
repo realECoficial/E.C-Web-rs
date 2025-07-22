@@ -9,6 +9,48 @@ body {
     margin-left: 192px;
 
 }
+
+#wallpapers img {
+    height: 23%;
+    width: 23%;
+    padding: 1%;
+   
+}
+
+#title {
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #a8a8a8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar {
+    border: 1px solid rgb(233, 233, 233);
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+}
+
+#navbar a {
+    background-color: #a8a8a8;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 30px;
+}
+a#heart {
+    background-color: white;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
 #lineas_separar {
     color: red;
 }
@@ -73,8 +115,6 @@ a:hover {
 
 
 #yamete {
-	
-
   color: green;
 }
 
