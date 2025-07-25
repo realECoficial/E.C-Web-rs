@@ -1,4 +1,6 @@
 [application]
+name = "realec-web"
+out_dir = "docs"
 
 [web.app]
 
