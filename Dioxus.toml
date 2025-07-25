@@ -1,7 +1,7 @@
 [application]
 name = "realec-web"
 out_dir = "docs"
-
+asset_dir = "public"
 [web.app]
 
 # HTML title tag content
